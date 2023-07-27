@@ -1,0 +1,48 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background-color: lightblue;
+}
+.parent{
+    background-color: grey;
+    width:35%;
+    height: 30%;
+    /* top left*/
+    /*bottom right*/
+    position:relative;
+    top:50px;
+    left:50px;
+}
+.child{
+    background-color: pink;
+    width:50%;
+    height: 50%;
+    position: absolute; /*it works according to parent container,if parent postion is not relative then child acts according to its parent i.e is body*/
+    top:30px;
+    left:30px;
+}
+.child2{
+    background-color: yellow;
+    position:fixed;
+    height: 30%;
+    width:35%;
+    /* border-radius: 50%; */
+    top:50px;
+    left:50px;
+    opacity:0.5;
+
+
+}
+.child3{
+    background-color: red;
+    position:sticky;
+    height: 30%;
+    width:35%;
+    /* border-radius: 50%; */
+    top:0;
+    
+    opacity:0.5;
+
+}
